@@ -11,7 +11,7 @@ const Home = () => {
       </h2>
       <Link to="/base">
         <motion.button 
-        animate={{}}>
+        animate={{color: "#ffffff"}}>
           Create Your Pizza
         </motion.button>
       </Link>
