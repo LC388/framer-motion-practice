@@ -1,5 +1,5 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const containerVariants = {
   hidden: {
@@ -14,7 +14,14 @@ const containerVariants = {
       mass: 0.4,
       damping: 8,
       when: "beforeChildren",
-      staggerChildren: 0.4    },
+      staggerChildren: 0.4,
+    },
+  },
+  exit: {
+    x: "-100vw",
+    transition: {
+      ease: "easeInOut",
+    },
   },
 };
 
@@ -34,8 +41,11 @@ const Order = ({ pizza }) => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
+      exit="exit"
+
     >
       <h2>Thank you for your order :)</h2>
+
       <motion.p variants={childVariants}>
         You ordered a {pizza.base} pizza with:
       </motion.p>
