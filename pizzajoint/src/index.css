@@ -143,3 +143,43 @@ li span.active::before{
   border-radius: 50%;
   background: #fff;
 }
+
+
+/* Landing Page */
+
+.landing.container{
+  max-width: 800px;
+  text-align: center;
+}
+
+.landing--title{
+  margin-bottom: 30px;
+}
+
+.btn-container{
+display: flex;
+justify-content: center;
+align-items: center;;
+}
+
+.btn-container p{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.register-btn{
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.6em;
+  border: 3px solid white;
+  margin: 30px 20px;
+  width: 200px;
+}
+
+.login-btn{
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.6em;
+  border: 3px solid white;
+  margin: 30px 20px;
+  width: 200px;
+}

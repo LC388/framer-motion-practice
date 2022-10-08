@@ -37,7 +37,7 @@ const Modal = ({showModal, setShowModal}) => {
     variants={modal}
     >
     <p>Want to make another pizza?</p>
-    <Link to="/"><button>Start Again</button></Link>
+    <Link to="/home"><button>Start Again</button></Link>
 
     </motion.div>
     </motion.div>

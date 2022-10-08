@@ -49,7 +49,7 @@ const Home = () => {
           Create Your Pizza
         </motion.button>
       </Link>
-      <Loader />
+      
     </motion.div>
   );
 };
