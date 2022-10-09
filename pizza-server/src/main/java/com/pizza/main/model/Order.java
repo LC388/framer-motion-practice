@@ -1,7 +1,16 @@
 package com.pizza.main.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.*;
 
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "order")
 public class Order {
@@ -21,37 +30,4 @@ public class Order {
     @JoinColumn(name = "fulfillment_id")
     private Fulfillment fulfillment;
 
-    public Fulfillment getFulfillment() {
-        return fulfillment;
-    }
-
-    public void setFulfillment(Fulfillment fulfillment) {
-        this.fulfillment = fulfillment;
-    }
-
-    public Employee getEmployee() {
-        return employee;
-    }
-
-    public void setEmployee(Employee employee) {
-        this.employee = employee;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    //TODO [JPA Buddy] generate columns from DB
 }
